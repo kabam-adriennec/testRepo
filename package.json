@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/kabam-adriennec/testRepo/issues"
   },
-  "homepage": "https://github.com/kabam-adriennec/testRepo#readme"
+  "homepage": "https://github.com/kabam-adriennec/testRepo#readme",
+  "publishConfig": {
+    "@kabam-adriennec:registry": "https://npm.pkg.github.com"
+  }
 }
