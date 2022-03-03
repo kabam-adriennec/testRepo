@@ -1,0 +1,19 @@
+{
+  "name": "@kabam-adriennec/testrepo",
+  "version": "1.0.0",
+  "description": "test package for spinnaker",
+  "main": "index.js",
+  "scripts": {
+    "test": "exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kabam-adriennec/testRepo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kabam-adriennec/testRepo/issues"
+  },
+  "homepage": "https://github.com/kabam-adriennec/testRepo#readme"
+}
