@@ -24,7 +24,8 @@ jobs:
         run: echo "${{ secrets.DOCKER_LOGIN }}" | docker login ghcr.io -u kabam-adriennec --password-stdin
       - name: Push image
         run: |
-          IMAGE_ID=ghcr.io/${{ github.repository }}/$IMAGE_NAME
+          #IMAGE_ID=ghcr.io/${{ github.repository }}/$IMAGE_NAME
+          IMAGE_ID=ghcr.io/kabam-adriennec/testpackage
           # Change all uppercase to lowercase
           IMAGE_ID=$(echo $IMAGE_ID | tr '[A-Z]' '[a-z]')
           # Strip git ref prefix from version
