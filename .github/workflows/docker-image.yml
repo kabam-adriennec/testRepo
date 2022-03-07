@@ -1,16 +1,3 @@
-name: Docker Image CI
-
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
-
-jobs:
-
-  build:
-
-    runs-on: ubuntu-latest
 name: Build Image
 
 on:
@@ -50,9 +37,3 @@ jobs:
           echo VERSION=$VERSION
           docker tag $IMAGE_NAME $IMAGE_ID:$VERSION
           docker push $IMAGE_ID:$VERSION
-
-    steps:
-    - uses: actions/checkout@v2
-    - name: Build the Docker image
-      #run: docker build . --file app/Dockerfile --tag ghcr.io/kabam-adriennec/testpackage:latest
-      run: docker build . --file app/Dockerfile --tag kabam-adriennec/testpackage:latest
