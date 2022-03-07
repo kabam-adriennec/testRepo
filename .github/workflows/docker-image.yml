@@ -23,7 +23,7 @@ jobs:
       - name: Log into registry
         run: echo "${{ secrets.DOCKER_LOGIN }}" | docker login ghcr.io -u kabam-adriennec --password-stdin
       - name: Push image
-        run: docker push ghcr.io/kabam-adriennec/testpackage:$latest
+        run: docker push ghcr.io/kabam-adriennec/testpackage:latest
 
           #IMAGE_ID=ghcr.io/${{ github.repository }}/$IMAGE_NAME
           #IMAGE_ID=ghcr.io/kabam-adriennec/testpackage
