@@ -4,7 +4,7 @@ RUN mkdir -p /testRepo
 COPY . /testRepo
 WORKDIR /testRepo
 RUN yarn install --production
-RUN npm install express
+RUN npm install -g express
 COPY . .
 CMD ["node", "/testRepo/app/src/index.js"]
 EXPOSE 3000
