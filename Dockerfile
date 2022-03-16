@@ -1,9 +1,9 @@
-# syntax=docker/dockerfile:1
 FROM node:12-alpine
 RUN apk add --no-cache python2 g++ make
-WORKDIR /app
-COPY . .
+RUN mkdir -p /testRepo
+COPY . /testRepo
+WORKDIR /testRepo
 RUN yarn install --production
-CMD ["node", "src/index.js"]
+CMD ["node", "/testRepo/app/src/index.js"]
 EXPOSE 3000 
 LABEL org.opencontainers.image.source https://github.com/kabam-adriennec/testRepo
