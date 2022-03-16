@@ -4,7 +4,7 @@ RUN mkdir -p /testRepo
 COPY . /testRepo
 WORKDIR /testRepo
 RUN yarn install --production
-COPY /testRepo/app/package*.json ./
+COPY /testRepo/app/package.json ./
 RUN npm install -g express
 COPY . .
 CMD ["node", "/testRepo/app/src/index.js"]
