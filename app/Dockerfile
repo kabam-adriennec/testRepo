@@ -4,6 +4,6 @@ RUN apk add --no-cache python2 g++ make
 WORKDIR /app
 COPY . .
 RUN yarn install --production
-CMD ["node", "src/index.js"]
+CMD ["node", "src/indextest.js"]
 EXPOSE 3000 
 LABEL org.opencontainers.image.source https://github.com/kabam-adriennec/testRepo
