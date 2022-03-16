@@ -5,5 +5,5 @@ COPY . /testRepo
 WORKDIR /testRepo
 RUN yarn install --production
 CMD ["node", "/testRepo/app/src/index.js"]
-EXPOSE 3000 
+EXPOSE 3000
 LABEL org.opencontainers.image.source https://github.com/kabam-adriennec/testRepo
