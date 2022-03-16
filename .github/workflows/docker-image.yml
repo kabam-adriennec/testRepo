@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Build Docker Image
-        run: docker build . --file app/Dockerfile --tag ghcr.io/kabam-adriennec/testpackage:latest
+        run: docker build . --file Dockerfile --tag ghcr.io/kabam-adriennec/testpackage:latest
       - name: Log into registry
         run: echo "${{ secrets.DOCKER_LOGIN }}" | docker login ghcr.io -u kabam-adriennec --password-stdin
       - name: Push image
