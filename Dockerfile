@@ -1,4 +1,7 @@
 FROM node:12-alpine
+RUN mkdir -p /testRepo
+COPY . /testRepo
+WORKDIR /testRepo
 CMD chmod +x helloworld.txt
 CMD ./helloworld.sh
 EXPOSE 3000
