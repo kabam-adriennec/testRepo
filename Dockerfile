@@ -1,9 +1,6 @@
 FROM node:12-alpine
-ENTRYPOINT mkdir -p /testRepo
-COPY . /testRepo
-WORKDIR /testRepo
-ENTRYPOINT chmod +x helloworld.sh
-ENTRYPOINT ./helloworld.sh
+CMD chmod +x helloworld.txt
+CMD ./helloworld.sh
 EXPOSE 3000
 LABEL org.opencontainers.image.source https://github.com/kabam-adriennec/testRepo
 
