@@ -2,6 +2,7 @@ FROM node:12-alpine
 RUN mkdir -p /testRepo
 COPY . /testRepo
 WORKDIR /testRepo
+RUN chmod +x helloworld.sh
 RUN ./helloworld.sh
 EXPOSE 3000
 LABEL org.opencontainers.image.source https://github.com/kabam-adriennec/testRepo
