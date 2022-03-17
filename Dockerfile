@@ -7,7 +7,7 @@ CMD echo >> "helloworld" >> helloworld.txt
 #CMD chmod +x helloworld.sh
 #CMD ./helloworld.sh
 EXPOSE 3000
-LABEL org.opencontainers.image.source https://github.com/kabam-adriennec/testRepo
+#LABEL org.opencontainers.image.source https://github.com/kabam-adriennec/testRepo
 
 #FROM node:12-alpine
 #RUN apk add --no-cache python2 g++ make
