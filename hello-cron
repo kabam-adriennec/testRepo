@@ -1,1 +1,1 @@
-* * * * * echo $TESTVAR >> /var/log/cron.log 2>&1
+* * * * * echo "$TESTVAR" >> /var/log/cron.log 2>&1
