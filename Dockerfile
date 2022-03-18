@@ -4,6 +4,7 @@ COPY . /testRepo
 WORKDIR /testRepo
 CMD touch helloworld.txt
 CMD echo >> "helloworld" >> helloworld.txt
+RUN echo helloworld
 #CMD chmod +x helloworld.sh
 #CMD ./helloworld.sh
 EXPOSE 3000
