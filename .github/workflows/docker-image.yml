@@ -18,3 +18,5 @@ jobs:
         run: echo "${{ secrets.DOCKER_LOGIN }}" | docker login ghcr.io -u kabam-adriennec --password-stdin
       - name: Push image
         run: docker push ghcr.io/kabam-adriennec/testpackage:latest
+      - name: Push image 
+        run: docker push ghcr.io/kabam-adriennec/testpackage:test1
