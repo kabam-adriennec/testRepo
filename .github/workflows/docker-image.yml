@@ -20,6 +20,4 @@ jobs:
         run: docker tag ghcr.io/kabam-adriennec/testpackage ghcr.io/kabam-adriennec/testpackage:test3
       - name: push image to  new tag
         run: docker push ghcr.io/kabam-adriennec/testpackage:test3
-      - name: Push image
-        run: docker push ghcr.io/kabam-adriennec/testpackage:latest
-      
+ 
